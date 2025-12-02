@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/Logo.svg" />
+    <!-- Font Awesome CSS via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-…"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,321 +24,355 @@
     <title>LaslesVPN</title>
   </head>
   <body>
-    <main class="container">
+    <div class="container">
       <header class="header">
         <div class="header__logo">
-          <img src="./assets/Logo.svg" alt="logo" class="header__logo-l" />
-          LaslesVPN
+          <img class="header__logo-svg" src="./assets/Logo.svg" alt="logo" />
+          <span class="header__logo-title">Lasles<strong>VPN</strong></span>
         </div>
-        <nav class="header__links">
-          <a href="#" class="header__link">About</a>
-          <a href="#" class="header__link">Features</a>
-          <a href="#" class="header__link">Pricing</a>
-          <a href="#" class="header__link">Testimonials</a>
-          <a href="#" class="header__link">Help</a>
-        </nav>
+
+        <ul class="header__links">
+          <li>
+            <a class="header__link" href="#">About</a>
+          </li>
+
+          <li>
+            <a class="header__link" href="#">Features</a>
+          </li>
+
+          <li>
+            <a class="header__link" href="#">Pricing</a>
+          </li>
+
+          <li>
+            <a class="header__link" href="#">Testimonials</a>
+          </li>
+
+          <li>
+            <a class="header__link" href="#">Help</a>
+          </li>
+        </ul>
+
         <div class="header__sign">
-          Sign In
-          <a class="header__btn btn">Sign Up</a>
+          <a class="header__sign-in" href="#">Sign In</a>
+          <a class="header__sign-up" href="#">Sign Up</a>
         </div>
       </header>
 
-      <section class="section">
-        <div class="section__content">
-          <div class="section__header">
-            <h1 class="section__title">Want anything to be easy with LaslesVPN.</h1>
-            <p class="section__description">
-              Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from
-              us.
+      <div class="section section__about" id="about">
+        <div class="section__left">
+          <div class="section__content">
+            <h1 class="section__content-title">Want anything to be easy with <strong>LaslesVPN</strong>.</h1>
+
+            <p class="section__content-description">
+              Provide a network for all your needs with ease and fun using
+              <span class="font-500">LaslesVPN</span> discover interesting features from us.
             </p>
           </div>
-          <a href="#" class="section__button">Get Started</a>
-        </div>
-        <div class="section__image">
-          <img class="section__poster" src="./assets/Illustration 1.svg" alt="Illustration poster" />
-        </div>
-      </section>
 
-      <article class="info">
-        <div class="info__grid">
+          <button class="section__button">Get Started</button>
+        </div>
+
+        <div class="section__right">
+          <img class="section__right-poster" src="./assets/Illustration 1.svg" alt="Illustration image" />
+        </div>
+      </div>
+
+      <div class="section section__info">
+        <div class="section__info-card">
           <img src="./assets/user.svg" alt="user icon" />
-          <div class="info__grid-detail">
-            <h2 class="info__grid-count">90+</h2>
-            <h3 class="info__grid-name">User</h3>
+
+          <div class="section__info-details">
+            <h2 class="section__info-count">90+</h2>
+            <p class="section__info-title">Users</p>
           </div>
         </div>
 
-        <div class="info__grid">
+        <div class="section__info-card">
           <img src="./assets/location.svg" alt="location icon" />
-          <div class="info__grid-detail">
-            <h2 class="info__grid-count">30+</h2>
-            <h3 class="info__grid-name">Locations</h3>
+
+          <div class="section__info-details">
+            <h2 class="section__info-count">30+</h2>
+            <p class="section__info-title">Locations</p>
           </div>
         </div>
 
-        <div class="info__grid">
+        <div class="section__info-card">
           <img src="./assets/Server.svg" alt="server icon" />
-          <div class="info__grid-detail">
-            <h2 class="info__grid-count">50+</h2>
-            <h3 class="info__grid-name">Servers</h3>
+
+          <div class="section__info-details">
+            <h2 class="section__info-count">50+</h2>
+            <p class="section__info-title">Servers</p>
           </div>
         </div>
-      </article>
+      </div>
 
-      <section class="section" id="fetures">
-        <img src="./assets/Illustration 2.svg" alt="Illustration poster" />
-        <div class="section__content">
-          <div class="section__header">
-            <h2 class="section__title">
+      <div class="section section__features">
+        <div class="section__features-poster">
+          <img class="section__features-image" src="./assets/Illustration 2.svg" alt="Illustration poster" />
+        </div>
+        <div class="section__features-content">
+          <div class="section__heading">
+            <h2 class="section__heading-title">
               We Provide Many <br />
               Features You Can Use
             </h2>
-            <p class="section__description">
-              You can explore the features that we provide with fun and have their own functions each feature.
+            <p class="section__heading-description">
+              You can explore the features that we provide with fun and <br />
+              have their own functions each feature.
             </p>
           </div>
-          <ul class="section__features">
+
+          <ul class="section__features-list">
             <li class="section__features-feature">
-              <img src="./assets/ture.svg" alt="right icon" />
-              <p class="section__feature-des">Powerfull online protection.</p>
+              <img src="./assets/ture.svg" alt="true icon" />
+              <p>Powerfull online protection.</p>
             </li>
 
             <li class="section__features-feature">
-              <img src="./assets/ture.svg" alt="right icon" />
-              <p class="section__feature-des">Internet without borders.</p>
+              <img src="./assets/ture.svg" alt="true icon" />
+              <p>Powerfull online protection.</p>
             </li>
 
             <li class="section__features-feature">
-              <img src="./assets/ture.svg" alt="right icon" />
-              <p class="section__feature-des">Supercharged VPN</p>
+              <img src="./assets/ture.svg" alt="true icon" />
+              <p>Powerfull online protection.</p>
             </li>
 
             <li class="section__features-feature">
-              <img src="./assets/ture.svg" alt="right icon" />
-              <p class="section__feature-des">No specific time limits.</p>
+              <img src="./assets/ture.svg" alt="true icon" />
+              <p>Powerfull online protection.</p>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
 
-      <section class="section section-with-bg">
-        <div class="section__header">
-          <h2 class="section__title">Choose Your Plan</h2>
-          <p class="section__description">
-            Let's choose the package that is best for you and explore it happily and <br />
-            cheerfully.
+      <div class="section section__plans section__column section-with-bg">
+        <div class="section__heading">
+          <h2 class="section__heading-title">Choose Your Plan</h2>
+          <p class="section__heading-description">
+            Let's choose the package that is best for you and explore it happily and cheerfully.
           </p>
         </div>
-        <div class="section__plans">
+
+        <div class="section__plans-container">
           <div class="section__plan">
             <div class="section__plan-top">
-              <img src="./assets/Premium.svg" alt="premiun icon" />
+              <img src="./assets/Premium.svg" alt="box" />
 
-              <h3 class="section__plan-top-title">Free Plan</h3>
+              <h3 class="section__plan-title">Free Plan</h3>
 
-              <ul class="section__plan-top-list">
-                <li>
+              <ul class="section__plan-features">
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Unlimited Bandwitch</p>
+                  <p class="section__plan-description">Unlimited Bandwitch</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Encrypted Connection</p>
+                  <p class="section__plan-description">Encrypted Connection</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">No Traffic Logs</p>
+                  <p class="section__plan-description">No Traffic Logs</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Works on All Devices</p>
+                  <p class="section__plan-description">Works on All Devices</p>
                 </li>
               </ul>
             </div>
-            <div class="section__plan-bottom">
-              <h3 class="section__plan-bottom-title">Free</h3>
 
-              <a class="section__plan-bottom-select" href="#">Select</a>
+            <div class="section__plan-bottom">
+              <h3 class="section__plan-price">Free</h3>
+              <button class="section__plan-select">Select</button>
             </div>
           </div>
 
           <div class="section__plan">
             <div class="section__plan-top">
-              <img src="./assets/Premium.svg" alt="premiun icon" />
+              <img src="./assets/Premium.svg" alt="box" />
 
-              <h3 class="section__plan-top-title">Standard Plan</h3>
+              <h3 class="section__plan-title">Standard Plan</h3>
 
-              <ul class="section__plan-top-list">
-                <li>
+              <ul class="section__plan-features">
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Unlimited Bandwitch</p>
+                  <p class="section__plan-description">Unlimited Bandwitch</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Encrypted Connection</p>
+                  <p class="section__plan-description">Encrypted Connection</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Yes Traffic Logs</p>
+                  <p class="section__plan-description">No Traffic Logs</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Works on All Devices</p>
+                  <p class="section__plan-description">Works on All Devices</p>
                 </li>
-                <li>
+
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Connect Anyware</p>
+                  <p class="section__plan-description">Connect Anyware</p>
                 </li>
               </ul>
             </div>
-            <div class="section__plan-bottom">
-              <h3 class="section__plan-bottom-title">$9 <span class="font-400">/ mo</span></h3>
 
-              <a class="section__plan-bottom-select" href="#">Select</a>
+            <div class="section__plan-bottom">
+              <h3 class="section__plan-price">$9 <span class="font-400-grey">/ mo</span></h3>
+              <button class="section__plan-select">Select</button>
             </div>
           </div>
 
           <div class="section__plan">
             <div class="section__plan-top">
-              <img src="./assets/Premium.svg" alt="premiun icon" />
-              <h3 class="section__plan-top-title">Premium Plan</h3>
+              <img src="./assets/Premium.svg" alt="box" />
 
-              <ul class="section__plan-top-list">
-                <li>
+              <h3 class="section__plan-title">Premium Plan</h3>
+
+              <ul class="section__plan-features">
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Unlimited Bandwitch</p>
-                </li>
-                <li>
-                  <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Encrypted Connection</p>
+                  <p class="section__plan-description">Unlimited Bandwitch</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Yes Traffic Logs</p>
+                  <p class="section__plan-description">Encrypted Connection</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Works on All Devices</p>
+                  <p class="section__plan-description">No Traffic Logs</p>
                 </li>
 
-                <li>
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Connect Anyware</p>
+                  <p class="section__plan-description">Works on All Devices</p>
                 </li>
-                <li>
+
+                <li class="section__plan-feature">
                   <img src="./assets/Vector.svg" alt="vector" />
-                  <p class="section__plan-des">Get New Features</p>
+                  <p class="section__plan-description">Connect Anyware</p>
+                </li>
+
+                <li class="section__plan-feature">
+                  <img src="./assets/Vector.svg" alt="vector" />
+                  <p class="section__plan-description">Get New Features</p>
                 </li>
               </ul>
             </div>
-            <div class="section__plan-bottom">
-              <h3 class="section__plan-bottom-title">$12 <span class="font-400">/ mo</span></h3>
 
-              <a class="section__plan-bottom-select select-fill" href="#">Select</a>
+            <div class="section__plan-bottom">
+              <h3 class="section__plan-price">$12 <span class="font-400-grey">/ mo</span></h3>
+              <button class="section__plan-select">Select</button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section section-with-bg">
-        <div class="section__header">
-          <h2 class="section__title">
-            Huge Global Network <br />
-            of Fast VPN
-          </h2>
-          <p class="section__description">
-            See <span class="font-500">LaslesVPN</span> everywhere to make it easier for you when you move <br />
-            locations.
-          </p>
-        </div>
-        <img class="section__map-poster" src="./assets/map.svg" alt="map image" />
-        <ul class="section__sponsers">
-          <li class="section__sponser"><img src="./assets/Netflex.svg" alt="Netflex" /></li>
-          <li class="section__sponser"><img src="./assets/Reddit.svg" alt="Reddit" /></li>
-          <li class="section__sponser"><img src="./assets/Amazon.svg" alt="Amazon" /></li>
-          <li class="section__sponser"><img src="./assets/Discord.svg" alt="Discord" /></li>
-          <li class="section__sponser"><img src="./assets/Spotify.svg" alt="Spotify" /></li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <div class="section__header">
-          <h2 class="section__title">
-            Trusted by Thousands of <br />
-            Happy Customer
-          </h2>
-          <p class="section__description">
-            These are the stories of our customers who have joined us with great <br />
-            pleasure when using this crazy feature.
+      <div class="section section__network section__column section-with-bg">
+        <div class="section__heading">
+          <h2 class="section__heading-title">Huge Global Network of Fast VPN</h2>
+          <p class="section__heading-description">
+            See LaslesVPN everywhere to make it easier for you when you move locations.
           </p>
         </div>
 
-        <ul class="section__testimonials">
-          <li class="section-testimonial">
-            <div class="section-testimonial-detail">
-              <div class="section-testimonial-left">
-                <img src="./assets/viezh.png" alt="viezh image" />
-                <div class="section-testimonial-left-info">
-                  <h3 class="section-testimonial-name">Viezh Robert</h3>
-                  <h3 class="section-testimonial-city">Warsaw, Poland</h3>
+        <img class="section__network-poster" src="./assets/map.svg" alt="map poster" />
+
+        <div class="section__sponsers">
+          <img src="./assets/Netflex.svg" alt="Netflex" />
+          <img src="./assets/Reddit.svg" alt="Reddit" />
+          <img src="./assets/Amazon.svg" alt="Amazon" />
+          <img src="./assets/Discord.svg" alt="Discord" />
+          <img src="./assets/Spotify.svg" alt="Spotify" />
+        </div>
+      </div>
+
+      <div class="section section__testimonials section__column">
+        <div class="section__heading">
+          <h2 class="section__heading-title">Trusted by Thousands of Happy Customer</h2>
+          <p class="section__heading-description">
+            These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+          </p>
+        </div>
+        <div class="testimonials__container">
+          <div class="testimonial__card">
+            <div class="testimonial__card-top">
+              <div class="testimonial__card-left">
+                <img src="./assets/viezh.png" alt="avatar" class="testimonial__card-avatar" />
+
+                <div class="testimonial__card-detail">
+                  <h4 class="testimonial__card-name">Viezh Robert</h4>
+                  <h4 class="testimonial__card-city">Warsaw, Poland</h4>
                 </div>
               </div>
-              <div class="section-testimonial-right">
-                <span class="rate">4.5</span>
-                <img src="./assets/star.svg" alt="star icon" />
+
+              <div class="testimonial__card-right">
+                <p class="testimonial__rate">4.5</p>
+                <img src="./assets/star.svg" alt="star icon" class="testimonial__card-star" />
               </div>
             </div>
-            <p class="section-testimonial-review">
+
+            <p class="testimonial__card-review">
               “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there
               have been no problems. LaslesVPN always the best”.
             </p>
-          </li>
-          <li class="section-testimonial">
-            <div class="section-testimonial-detail">
-              <div class="section-testimonial-left">
-                <img src="./assets/yessica.png" alt="yessica image" />
-                <div class="section-testimonial-left-info">
-                  <h3 class="section-testimonial-name">Yessica Christy</h3>
-                  <h3 class="section-testimonial-city">Shanxi, China</h3>
+          </div>
+
+          <div class="testimonial__card">
+            <div class="testimonial__card-top">
+              <div class="testimonial__card-left">
+                <img src="./assets/yessica.png" alt="avatar" class="testimonial__card-avatar" />
+
+                <div class="testimonial__card-detail">
+                  <h4 class="testimonial__card-name">Yessica Christy</h4>
+                  <h4 class="testimonial__card-city">Shanxi, China</h4>
                 </div>
               </div>
-              <div class="section-testimonial-right">
-                <span class="rate">4.5</span>
-                <img src="./assets/star.svg" alt="star icon" />
+
+              <div class="testimonial__card-right">
+                <p class="testimonial__rate">4.5</p>
+                <img src="./assets/star.svg" alt="star icon" class="testimonial__card-star" />
               </div>
             </div>
-            <p class="section-testimonial-review">
+
+            <p class="testimonial__card-review">
               “I like it because I like to travel far and still can connect with high speed.”.
             </p>
-          </li>
-          <li class="section-testimonial">
-            <div class="section-testimonial-detail">
-              <div class="section-testimonial-left">
-                <img src="./assets/kim.png" alt="kim image" />
-                <div class="section-testimonial-left-info">
-                  <h3 class="section-testimonial-name">Kim Young Jou</h3>
-                  <h3 class="section-testimonial-city">Seoul, South Koread</h3>
+          </div>
+
+          <div class="testimonial__card">
+            <div class="testimonial__card-top">
+              <div class="testimonial__card-left">
+                <img src="./assets/kim.png" alt="avatar" class="testimonial__card-avatar" />
+
+                <div class="testimonial__card-detail">
+                  <h4 class="testimonial__card-name">Kim Young Jou</h4>
+                  <h4 class="testimonial__card-city">Seoul, South Korea</h4>
                 </div>
               </div>
-              <div class="section-testimonial-right">
-                <span class="rate">4.5</span>
-                <img src="./assets/star.svg" alt="star icon" />
+
+              <div class="testimonial__card-right">
+                <p class="testimonial__rate">4.5</p>
+                <img src="./assets/star.svg" alt="star icon" class="testimonial__card-star" />
               </div>
             </div>
-            <p class="section-testimonial-review">
-              “This is very unusual for my business that currently requires a virtual private network <br />
-              that has high security.”.
+
+            <p class="testimonial__card-review">
+              “This is very unusual for my business that currently requires a virtual private network that has high
+              security.”.
             </p>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div class="scroll">
           <div class="points">
             <div class="points-point point-fill"></div>
@@ -340,21 +382,70 @@
             <div class="points-point"></div>
           </div>
           <div class="arrows">
-            <img class="arrow-left" src="./assets/arrow-left.svg" alt="arrow left" />
-            <img class="arrow-right" src="./assets/arrow-right.svg" alt="arrow right" />
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-      </section>
-      <section class="section__subscribe">
-        <div class="section__header">
-          <h2 class="section__title">
-            Subscribe Now for <br />
-            Get Special Features!
-          </h2>
-          <p class="section__description">Let's subscribe with us and find the fun.</p>
+      </div>
+
+      <div class="section section__subscribe">
+        <div class="section__subscribe-left">
+          <h2 class="section__subscribe-title">Subscribe Now for Get Special Features!</h2>
+          <p class="section__subscribe-description">Let's subscribe with us and find the fun.</p>
         </div>
-        <a href="#" class="section__button">Subscribe Now</a>
-      </section>
-    </main>
+        <div class="section__subscribe-buttom">
+          <button class="section__button">Subscribe Now</button>
+        </div>
+      </div>
+
+      <footer class="footer section-with-bg">
+        <div class="footer__left">
+          <div class="header__logo">
+            <img class="header__logo-svg" src="./assets/Logo.svg" alt="logo" />
+            <span class="header__logo-title">Lasles<strong>VPN</strong></span>
+          </div>
+          <p class="section__heading-description">
+            <span class="font-500">LaslesVPN</span> is a private virtual network that has unique features and has high
+            security.
+          </p>
+          <div class="footer__socials">
+            <img src="./assets/Facebook.svg" alt="facebook" />
+            <img src="./assets/Twitter.svg" alt="twitter" />
+            <img src="./assets/instagram.svg" alt="instagram" />
+          </div>
+          <p class="footer__copyright">©2020Lasless<span class="font-500">VPN</span></p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-list">
+            <h4 class="footer__right-title">Product</h4>
+
+            <h5 class="footer__right-info">Download</h5>
+            <h5 class="footer__right-info">Pricing</h5>
+            <h5 class="footer__right-info">Locations</h5>
+            <h5 class="footer__right-info">Server</h5>
+            <h5 class="footer__right-info">Countries</h5>
+            <h5 class="footer__right-info">Blog</h5>
+          </div>
+
+          <div class="footer__right-list">
+            <h4 class="footer__right-title">Engage</h4>
+
+            <h5 class="footer__right-info">LaslesVPN ?</h5>
+            <h5 class="footer__right-info">FAQ</h5>
+            <h5 class="footer__right-info">Tutorials</h5>
+            <h5 class="footer__right-info">About Us</h5>
+            <h5 class="footer__right-info">Privacy Policy</h5>
+            <h5 class="footer__right-info">Terms of Service</h5>
+          </div>
+
+          <div class="footer__right-list">
+            <h4 class="footer__right-title">Earn Money</h4>
+
+            <h5 class="footer__right-info">Affiliate</h5>
+            <h5 class="footer__right-info">Become Partner</h5>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
