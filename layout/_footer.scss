@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18rem 0;
+  .section__heading-description {
+    margin-bottom: 1rem;
+    max-width: 34rem;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: auto;
+  }
+  &__socials {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    img {
+      background-color: $color-red;
+      border-radius: 50%;
+      box-shadow: 0px 3px 13px -4px $color-grey;
+    }
+  }
+  &__copyright {
+    color: $color-copyright;
+  }
+  &__right {
+    display: flex;
+    gap: 12.6rem;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    &-info {
+      font-weight: 400;
+      color: $color-grey;
+      &:hover {
+        color: $color-red;
+        cursor: pointer;
+      }
+    }
+  }
+}

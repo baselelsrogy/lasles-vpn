@@ -1,0 +1,83 @@
+.section {
+  display: flex;
+  padding: 10rem 0 0;
+  &-with-bg {
+    position: relative;
+    align-items: center;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: $color-bg-light-grey;
+      z-index: -1;
+    }
+  }
+  &__column {
+    flex-direction: column;
+    text-align: center;
+  }
+  &__left {
+    max-width: 55.5rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &-title {
+      font-size: 5rem;
+      font-weight: 500;
+      line-height: 7rem;
+    }
+    &-description {
+      color: $color-grey;
+      line-height: 3rem;
+      margin-bottom: 5rem;
+    }
+  }
+  &__button {
+    font-size: 1.6rem;
+    color: $color-red;
+    border: $border-size-1 solid $color-red;
+    padding: 1.75rem 7.7rem;
+    border-radius: $border-radius-10;
+    font-weight: 700;
+    transition: $transition-timing;
+    &:hover {
+      background-color: $color-btn;
+      color: $color-white;
+      box-shadow: 0 2rem 2.9rem -0.78rem $color-light-red;
+    }
+  }
+  &__right-poster {
+    position: relative;
+    right: -4rem;
+    width: 100%;
+  }
+  /* INFO CARDS */
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 0;
+    margin-top: 10rem;
+    box-shadow: 0rem 3rem 4rem 8rem $color-bg-light-grey;
+    border-radius: $border-radius-10;
+
+    &-card {
+      margin: 0 auto;
+      display: flex;
+      gap: 2rem;
+    }
+    &-count {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    &-title {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $color-grey;
+    }
+  }
+}

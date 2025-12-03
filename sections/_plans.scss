@@ -1,0 +1,71 @@
+.section {
+  &__plans {
+    padding-top: 8rem;
+  }
+  &__plans-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-top: 6rem;
+  }
+  &__plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: $border-size-2 solid $border-color;
+    border-radius: $border-radius-10;
+    padding: 7.9rem 6.9rem 5rem;
+    transition: $transition-timing;
+    &:hover {
+      transform: scale(1.022222);
+      border-color: $color-red;
+    }
+    &-top {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+    &-features {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-feature {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    &-description {
+      color: $color-grey;
+      font-size: 1.4rem;
+    }
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 5rem;
+    }
+    &-price {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    &-select {
+      padding: 1.3rem 6.29rem;
+      font-weight: 700;
+      border: $border-size-1 solid $color-red;
+      color: $color-red;
+      border-radius: $border-radius-50;
+      transition: $transition-timing;
+      &:hover {
+        color: $color-white;
+        background-color: $color-red;
+        box-shadow: 0 1.4rem 2.9rem -0.78rem $color-light-red;
+      }
+    }
+  }
+}

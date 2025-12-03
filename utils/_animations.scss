@@ -1,0 +1,35 @@
+@keyframes full-border {
+  0% {
+    border-color: $color-red;
+  }
+  25% {
+    border-color: $color-red;
+  }
+  50% {
+    border-color: $border-color;
+  }
+  75% {
+    border-color: $border-color;
+  }
+  100% {
+    border-color: $color-red;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-0.4rem);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.4rem);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.4rem);
+  }
+}

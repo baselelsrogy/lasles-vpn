@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  padding: 1rem 15rem;
+  position: sticky;
+  top: 0;
+  background-color: $color-white;
+  z-index: 20;
+  &__logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .input__open,
+  .label__open {
+    display: none;
+  }
+  &__links {
+    display: flex;
+    gap: 4rem;
+  }
+  &__link {
+    color: $color-grey;
+    border-bottom: 0.11rem solid transparent;
+    transition: $transition-timing;
+    &:hover {
+      color: $color-red;
+      border-bottom-color: $color-btn;
+    }
+  }
+  &__sign {
+    font-weight: 500;
+    &-in {
+      color: $color-navy-blue;
+      transition: $transition-timing;
+      &:hover {
+        color: $color-btn;
+      }
+    }
+    &-up {
+      color: $color-btn;
+      padding: 1.3rem 4.5rem;
+      border: $border-size-1 solid $color-btn;
+      border-radius: $border-radius-50;
+      margin-left: 3rem;
+      transition: $transition-timing;
+      &:hover {
+        color: $color-white;
+        background-color: $color-btn;
+      }
+    }
+  }
+}
+
+body:has(#about:target) .header-about,
+body:has(#features:target) .header-features,
+body:has(#pricing:target) .header-pricing,
+body:has(#testimonials:target) .header-testimonials,
+body:has(#help:target) .header-help {
+  color: $color-red;
+  border-bottom: 0.11rem solid $color-btn;
+}

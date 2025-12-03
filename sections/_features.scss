@@ -1,0 +1,41 @@
+.section {
+  &__features {
+    gap: 15rem;
+    align-items: center;
+    margin-bottom: 8rem;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-feature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $color-grey;
+    }
+  }
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 55.5rem;
+    margin: 0 auto;
+    &-title {
+      width: 44.7rem;
+      font-size: 3.5rem;
+      font-weight: 500;
+      line-height: 5rem;
+      margin: 0 auto;
+    }
+    &-description {
+      color: $color-grey;
+      line-height: 3rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.section {
+  &__subscribe {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.85rem 7rem;
+    flex-wrap: wrap;
+    box-shadow: 0rem 1rem 4rem 2rem $color-box-shadow-grey;
+    border-radius: 1rem;
+    transform: translateY(12.5rem);
+    z-index: 5;
+    background-color: $color-white;
+    &-title {
+      width: 37.161rem;
+      line-height: 4.5rem;
+      font-weight: 500;
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+    &-description {
+      color: $color-grey;
+      width: 41rem;
+    }
+    &-buttom .section__button {
+      padding: 1.7rem 6.5rem;
+    }
+  }
+}
